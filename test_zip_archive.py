@@ -42,4 +42,3 @@ def test_read_xlsx_from_zip(zip_path):
         df = pd.read_excel(xlsx_file)
         expected_columns = [0, "First Name", "Last Name", "Gender", "Country", "Age", "Date", "Id"]
         assert list(df.columns) == expected_columns, "Столбцы не совпадают"
-
